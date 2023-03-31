@@ -1,0 +1,11 @@
+body{
+    background-size: cover;
+    background-attachment: fixed;
+}
+.formulario form{
+    text-align: center;
+    width: 100%;
+    margin-top: 15em;
+    color: orangered;
+
+}
