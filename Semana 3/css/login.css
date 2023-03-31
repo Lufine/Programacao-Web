@@ -5,6 +5,7 @@ DATA: 15/03/2023
 Dev: Luiz Filipe - 2111287
 */
 
+/* A classe .login-form é um contêiner flexível com altura de 100% da viewport (tela) e alinhamento centralizado tanto vertical quanto horizontal (align-items e justify-content). */
 .login-form {
     align-items: center;
     display: flex;
@@ -13,6 +14,7 @@ Dev: Luiz Filipe - 2111287
     justify-content: center;
   }
   
+  /* A classe .login__header é um contêiner flexível com alinhamento centralizado e margem inferior de 50 pixels. Ela contém um título (h1) e uma imagem (img) que tem largura fixa de 250 pixels. */
   .login__header {
     align-items: center;
     display: flex;
@@ -25,13 +27,12 @@ Dev: Luiz Filipe - 2111287
     width: 250px;
   }
   
-  
-  
   .login__header h1 {
     color: #333;
     font-size: 1.5em;
   }
   
+  /* .login__input é um campo de entrada de texto com borda sólida preta de 2 pixels, canto arredondado (border-radius), tamanho de fonte de 1em, margem inferior de 15 pixels e preenchimento interno de 15 pixels. Sua largura máxima é de 300 pixels e tem preenchimento de 100% de sua largura. */
   .login__input {
     border: 2px solid #333;
     border-radius: 8px;
@@ -44,6 +45,7 @@ Dev: Luiz Filipe - 2111287
     width: 100%;
   }
   
+  /* .login__button é um botão com cor de fundo verde-azulada (background-color), borda sólida verde-limão (border) com espessura de 3 pixels, canto arredondado (border-radius), cor branca (color), cursor como um ponteiro (cursor), tamanho de fonte de 1em, largura máxima de 300 pixels e preenchimento interno de 15 pixels. Sua largura é de 100%. */
   .login__button {
     background-color: #00b5cc;
     border: 3px solid #b2df28;
@@ -56,6 +58,7 @@ Dev: Luiz Filipe - 2111287
     width: 100%;
   }
   
+  /* .login__button:disabled é o estilo que será aplicado ao botão quando ele estiver desabilitado (disabled), com uma cor de fundo cinza claro (background-color), borda sólida cinza (border) com espessura de 2 pixels, cor de texto cinza (color) e cursor padrão do sistema (cursor). */
   .login__button:disabled {
     background-color: #eee;
     border: 2px solid #969595;
