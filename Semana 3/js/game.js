@@ -5,7 +5,7 @@ DATA: 15/03/2023
 Dev: Luiz Filipe - 2111287
 */
 
-//Const para o jogo, timer e seletor
+// Const para o jogo, timer e seletor
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
@@ -24,7 +24,7 @@ const characters = [
   'callofduty',
 ];
 
-//Criação de elementos
+// Criação de elementos
 const createElement = (tag, className) => {
   const element = document.createElement(tag);
   element.className = className;
@@ -34,7 +34,7 @@ const createElement = (tag, className) => {
 let firstCard = '';
 let secondCard = '';
 
-//Checar se o jogo terminou
+// Checar se o jogo terminou
 const checkEndGame = () => {
   const disabledCards = document.querySelectorAll('.disabled-card');
 
@@ -71,7 +71,7 @@ const checkCards = () => {
   }
 
 }
-// revelar cartas
+// Revelar cartas
 const revealCard = ({ target }) => {
 
   if (target.parentNode.className.includes('reveal-card')) {
@@ -92,7 +92,7 @@ const revealCard = ({ target }) => {
 
   }
 }
-// criação das cartas
+// Criação das cartas
 const createCard = (character) => {
 
   const card = createElement('div', 'card');
@@ -110,7 +110,7 @@ const createCard = (character) => {
   return card;
 }
 
-//Carregar o jogo, e deixar as cartas em posições aleatórias
+// Carregar o jogo, e deixar as cartas em posições aleatórias
 const loadGame = () => {
   const duplicateCharacters = [...characters, ...characters];
 
@@ -122,36 +122,36 @@ const loadGame = () => {
   });
 }
 
-//Contador de tempo
+// Contador de tempo
 const timerDisplay = document.getElementById('timer');
 let timeLeft = 60; // tempo em segundos
 
-//Função para o tempo iniciar em ordem decrescente
+// Função para o tempo iniciar em ordem decrescente
 function startTimer() {
 
   const timer = setInterval(() => {
-    // atualizar o tempo restante
+    // Atualizar o tempo restante
     timeLeft--;
-    // atualizar o display do timer
+    // Atualizar o display do timer
     timerDisplay.textContent = timeLeft;
     
-    // verificar se o tempo acabou
+    // Verificar se o tempo acabou
     if (timeLeft === 0) {
-      // parar o temporizador
+      // Parar o temporizador
       clearInterval(timer);
-      // exibir um alerta
+      // Exibir um alerta
       alert('Tempo esgotado!');
-      // reiniciar o temporizador
+      // Reiniciar o temporizador
       timeLeft = 60;
       timerDisplay.textContent = timeLeft;
     }
-  }, 1000); // intervalo de 1 segundo
+  }, 1000); // Intervalo de 1 segundo
 }
 
-// iniciar o temporizador quando a página carregar
+// Iniciar o temporizador quando a página carregar
 window.onload = startTimer;
 
-// mostrar o nome do jogador
+// Mostrar o nome do jogador
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');
   startTimer();
