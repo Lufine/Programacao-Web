@@ -5,6 +5,56 @@ DATA: 15/03/2023
 Dev: Luiz Filipe - 2111287
 */
 
+/*
+main: Define uma área principal da página que será exibida como um contêiner flex com direção de coluna.
+
+display: Define o tipo de exibição para o elemento.
+flex-direction: Define a direção principal dos itens flexíveis no contêiner.
+width: Define a largura do elemento principal.
+background-image: Define uma imagem de fundo para o elemento principal.
+background-size: Define a escala da imagem de fundo para cobrir todo o elemento principal.
+min-height: Define a altura mínima do elemento principal.
+align-items: Define como os itens flexíveis são alinhados no eixo transversal (verticalmente).
+justify-content: Define como os itens flexíveis são alinhados no eixo principal (horizontalmente).
+padding: Define o preenchimento do elemento principal.
+
+header: Define um cabeçalho para a página que será exibido como um contêiner flex com elementos alinhados centralmente e espaçados uniformemente.
+
+display: Define o tipo de exibição para o elemento.
+align-items: Define como os itens flexíveis são alinhados no eixo transversal (verticalmente).
+justify-content: Define como os itens flexíveis são alinhados no eixo principal horizontalmente).
+background-color: Define uma cor de fundo para o cabeçalho.
+font-size: Define o tamanho da fonte para o texto do cabeçalho.
+width: Define a largura do elemento do cabeçalho.
+max-width: Define a largura máxima do elemento do cabeçalho.
+padding: Define o preenchimento do cabeçalho.
+margin: Define a margem do cabeçalho.
+border-radius: Define o raio do canto do cabeçalho.
+
+.grid: Define uma grade que exibe vários cartões de jogo.
+display: Define o tipo de exibição para o elemento.
+grid-template-columns: Define o número e a largura das colunas da grade.
+gap: Define o espaço entre os cartões.
+width: Define a largura da grade.
+max-width: Define a largura máxima da grade.
+margin: Define a margem da grade.
+
+.card: Define um cartão de jogo.
+aspect-ratio: Define a proporção da altura e largura do cartão.
+width: Define a largura do cartão.
+height: Define a altura do cartão.
+border-radius: Define o raio do canto do cartão.
+position: Define a posição do cartão.
+transition: Define uma transição suave para o cartão.
+transform-style: Define o estilo de transformação do cartão.
+background-color: Define a cor de fundo do cartão.
+
+face: Define a face frontal ou traseira do cartão.
+width: Define a largura da face.
+height: Define a altura da face.
+position: Define a posição da face.
+*/
+
 main {
     display: flex;
     flex-direction: column;
