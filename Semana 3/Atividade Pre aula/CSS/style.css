@@ -1,0 +1,146 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Filipe Neuwirth - 2111287
+DATA: 20/03/2023
+*/
+
+/* Esse file CSS consiste apenas para os demais arquivos se vincularem ao mesmo. */
+
+/* Estilos para o body */
+body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #3d3d3d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para os títulos */
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para os parágrafos */
+  p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Estilos para as listas */
+  ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+  }
+  
+  /* Estilos para os links */
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para os botões */
+  button {
+    background-color: #0077cc;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Estilos para os campos de formulário */
+  input[type="text"], input[type="email"], textarea {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  
+  /* Estilos para as tabelas */
+  table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+  }
+  
+  th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #0077cc;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Estilos para as tabelas alternadas */
+  .table1 th {
+    background-color: #ff6633;
+  }
+  
+  .table2 th {
+    background-color: #ffcc00;
+  }
+  
+  .table3 th {
+    background-color: #33cc33;
+  }
+  
+  /* Estilos para o container da imagem */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container img {
+    max-width: 100%;
+  }
+  
+  /* Estilos para a legenda da tabela */
+  caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
