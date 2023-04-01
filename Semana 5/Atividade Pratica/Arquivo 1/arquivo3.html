@@ -1,0 +1,200 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+DATA: 03/03/2023
+Dev: Luiz Filipe - 2111287
+-->
+
+<!DOCTYPE html> 
+<html lang="pt_BR"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>E-Sport</title> <!-- Título da página que aparece na aba do navegador -->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"> <!-- Ícone que aparece na aba do navegador -->
+    <link rel="stylesheet" href="stylee.css"> <!-- Adicionando a biblioteca Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+
+</head>
+
+<script>
+    window.addEventListener('scroll',
+        function() {
+            const navbar = document
+                .querySelector(
+                    '.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add(
+                    'scrolled');
+            } else {
+                navbar.classList.remove(
+                    'scrolled');
+            }
+        });
+</script>
+
+<!-- Adicionando o menu navegável -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">E-Sport</a>
+<button class="navbar-toggler" type="button"
+data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false"
+aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="arquivo2.html">Formulário</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="arquivo3.html">Tabelas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="arquivo4.html">Arenas</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<!-- Utilizando a classe "container" para definir um container principal da página -->
+<div class="container">
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Menu</h1>
+        <!-- A Tag main é responsável para dizer os navegadores onde está o conteúdo principal da aplicação. -->
+<main>
+</div>
+
+<body background="imgs/13087.jpg"> <!-- Abertura da tag BODY que contém o conteúdo do documento -->
+
+    <div class="geral">
+        <div class="tabelaA">
+            <table> <!-- Tabela -->
+                <div class="colunaA"> 
+                    <thead> <!-- Cabeçalho da tabela -->
+                      <tr>
+                        <th colspan="3">E-Sports</th> <!-- Célula de cabeçalho da tabela com a palavra "E-Sports" e ocupando 3 células da linha -->
+                      </tr>
+                    </thead>
+                <tbody> <!-- Corpo da tabela -->
+                  <tr> 
+                    <th>Nome</th> <!-- Célula de cabeçalho da tabela com a palavra "Nome" -->
+                        <th>Idade</th> <!-- Célula de cabeçalho da tabela com a palavra "Idade" -->
+                        <th>Profissão</th> <!-- Célula de cabeçalho da tabela com a palavra "Profissão" -->
+                  </tr>
+                  <tr> 
+                    <td>Maria</td>
+                    <td>32</td> 
+                    <td>Advogada</td> 
+                  </tr>
+                  <tr>
+                    <td>Carlos</td> 
+                    <td>25</td> 
+                    <td>Pro Player</td>
+                  </tr>
+                  <tr> 
+                    <td>Lucas</td> 
+                    <td>28</td>
+                    <td>Psicologo</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3">Total de pessoas: 3</td>
+                  </tr>
+                </tfoot>
+            </div>
+              </table>
+        </div>
+        
+        <div class="tabelaB">
+            <table>
+                <div class="colunaB">
+                    <thead>
+                      <tr>
+                        <th colspan="3">E-Sports</th>
+                      </tr>
+                    </thead>
+                
+                  <tr>
+                    <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                  </tr>
+                  <tr>
+                    <td>Thiago</td>
+                    <td>22</td>
+                    <td>Pro Player</td>
+                  </tr>
+                  <tr>
+                    <td>Neto</td>
+                    <td>25</td>
+                    <td>Treinador</td>
+                  </tr>
+                  <tr>
+                    <td>Douglas</td>
+                    <td>22</td>
+                    <td>Pro Player</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3">Total de pessoas: 3</td>
+                  </tr>
+                </tfoot>
+                </div>
+              </table>
+        </div>
+        
+        <div class="tabelaC">
+            <table>
+                <div class="colunaC">
+                    <thead>
+                      <tr>
+                        <th colspan="3">E-Sports</th>
+                      </tr>
+                    </thead>
+                
+                  <tr>
+                    <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                  </tr>
+                  <tr>
+                    <td>Guilherme</td>
+                    <td>22</td>
+                    <td>Pro Player</td>
+                  </tr>
+                  <tr>
+                    <td>Carlos</td>
+                    <td>35</td>
+                    <td>Treinador</td>
+                  </tr>
+                  <tr>
+                    <td>Luiz Filipe</td>
+                    <td>22</td>
+                    <td>Pro player</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3">Total de pessoas: 3</td>
+                  </tr>
+                </tfoot>
+                </div>
+              </table>
+        </div>
+    </div>
+
+</body>
+</html>
