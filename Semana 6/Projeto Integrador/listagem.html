@@ -1,0 +1,87 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev's: Alexandre Oliveira, Douglas Leonel de Almeida, Douglas Gabriel, Sebastião Oliveira Neto, Thiago Silva, Luiz Filipe, Elias Everson
+DATA: 29/03/2023 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minha Despensa</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#">NaDespensa</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="armazenamento.html">Início</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="adicionar.html">Adicionar Alimentos</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="listagem.html">Armazenamento de Alimentos</a> </li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Tabela -->
+	<div class="container mt-5">
+		<h2 class="mb-4">Lista de Alimentos</h2>
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>Alimento</th>
+					<th>Data de Validade</th>
+					<th>Quantidade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Arroz</td>
+					<td>30/06/2023</td>
+					<td>2 kg</td>
+				</tr>
+				<tr>
+					<td>Feijão</td>
+					<td>30/06/2023</td>
+					<td>1 kg</td>
+				</tr>
+				<tr>
+					<td>Macarrão</td>
+					<td>30/06/2023</td>
+					<td>500 g</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-5">
+		<h2 class="mb-4">Menu de Alimentos</h2>
+		<form id="formulario">
+			<div class="form-group">
+				<label for="alimento">Alimento:</label>
+				<input type="text" class="form-control" id="alimento"> </div>
+			<div class="form-group">
+				<label for="validade">Data de Validade:</label>
+				<input type="date" class="form-control" id="validade"> </div>
+			<div class="form-group">
+				<label for="quantidade">Quantidade:</label>
+				<input type="text" class="form-control" id="quantidade"> </div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+	</div>
+	<!-- JavaScript -->
+	<script src="table.js"></script>
+
+      <!-- Utilizando a classe "mt-5" para criar uma margem no topo e "text-muted" para definir o texto do rodapé em cinza -->
+      <footer class="mt-5 text-muted mx-auto text-center">
+        <p>&copy; NaDespensa Site's - 2023 Todos
+            os direitos reservados.</p>
+
+</body>
+
+</html>

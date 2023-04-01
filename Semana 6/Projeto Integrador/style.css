@@ -1,0 +1,49 @@
+/* Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev's: Alexandre Oliveira, Douglas Leonel de Almeida, Douglas Gabriel, Sebastião Oliveira Neto, Thiago Silva, Luiz Filipe, Elias Everson
+DATA: 29/03/2023 */
+
+body {
+    background-image: url("https://www.10wallpaper.com/wallpaper/1920x1200/1807/Green_Gradient_Abstract_Design_Background_1920x1200.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center cover;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+  }
+  
+  h1, h2 {
+    margin-top: 0;
+  }
+  
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav-item {
+    float: left;
+  }
+  
+  .nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    background-color: #111;
+  }
+  
+  section {
+    margin-top: 20px;
+  }

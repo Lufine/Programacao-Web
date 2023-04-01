@@ -1,0 +1,108 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev's: Alexandre Oliveira, Douglas Leonel de Almeida, Douglas Gabriel, Sebastião Oliveira Neto, Thiago Silva, Luiz Filipe, Elias Everson
+DATA: 29/03/2023 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Alimento</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">NaDespensa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="armazenamento.html">Início</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="adicionar.html">Adicionar Alimentos</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="listagem.html">Armazenamento de Alimentos</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Adicionar Alimentos</h2>
+        </header>
+        <form id="formulario">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome do Alimento</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="form-label">Data de Validade</label>
+                <input type="date" class="form-control" id="data" required>
+            </div>
+            <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="quantidade" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email para Notificação</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+    </div>
+    
+    <!-- Link para o JavaScript do Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-zOyN/lwceM2hffaaN25Ld48NbvzU87pX9D1zU/PT+71euBHn5w5mn5G5mTDpPR1ulnBu4e4l8z3W64x+5BQ7vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        const formulario = document.getElementById('formulario');
+    
+        formulario.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+    
+            const nome = document.getElementById('nome').value;
+            const data = document.getElementById('data').value;
+            const quantidade = document.getElementById('quantidade').value;
+            const email = document.getElementById('email').value;
+    
+            const novoAlimento = {
+                nome: nome,
+                data: data,
+                quantidade: quantidade,
+                email: email
+            }
+    
+            let alimentos = JSON.parse(localStorage.getItem('alimentos'));
+    
+            if (!alimentos) {
+                alimentos = [];
+            }
+    
+            alimentos.push(novoAlimento);
+    
+            localStorage.setItem('alimentos', JSON.stringify(alimentos));
+    
+            alert('Alimento adicionado com sucesso!');
+    
+            formulario.reset();
+        });
+    </script>
+
+    <!-- Utilizando a classe "mt-5" para criar uma margem no topo e "text-muted" para definir o texto do rodapé em cinza -->
+    <footer class="mt-5 text-muted mx-auto text-center">
+        <p>&copy; NaDespensa Site's - 2023 Todos
+            os direitos reservados.</p>
+
+</body>
+</html>    
