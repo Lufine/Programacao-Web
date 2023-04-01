@@ -1,0 +1,252 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA</h1>
+Disciplina de Programação Web
+DATA: 01/03/2023
+Dev: Luiz Filipe - 2111287
+*/
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+    background-attachment: fixed;
+
+}
+.voltini p{
+    border: 1px solid rgb(255, 0, 0);
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    align-items: first baseline;
+    position: absolute;
+    margin-top: -7em;
+    font-size: 1em;
+    padding: 230px 35px;
+    padding-top: 3px;
+    padding-left: 0px;
+    padding-bottom: 3px;
+    padding-right: 0px;
+    margin-right: 5.5em;
+    margin-left: 85vw;
+}
+.voltini a{
+    color: red;
+    text-align: justify;
+}
+.name h1{
+    font-size: 1em;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 5.5em;
+
+}
+.cabeçalho h1{
+    font-size: 1em;
+    text-align: left;
+    margin-left: 5.5em;
+    margin-right: 5.5em;
+    word-wrap: break-word;
+}
+.link{
+    margin-left: 3em;
+    margin-top: 152em;
+    text-align: left;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%
+
+}
+.title h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+
+}
+.geral{
+    text-align: justify;
+    margin-left: 5em;
+    margin-bottom: 3em;
+    margin-right: 3em;
+    font-size: 18px;
+
+}
+.temas h2{
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
+}
+.logo img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+
+}
+.topicos {
+    margin-left: 1.5em;
+
+}
+.games{
+    margin-left: 3em;
+    margin-right: 3em;
+
+}
+.formulario form{
+    text-align: center;
+    width: 100%;
+    margin-top: 15em;
+    color: orangered;
+
+}
+.link{
+    margin-left: 5.5em;
+    margin-top: 1em;
+    text-align: left;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%
+}
+.title h2{
+    margin-left: 40%;
+    margin-right: 40%;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+    border: black solid;
+    min-block-size: 70px 213.625px;
+    box-shadow: gray -4px 4px 3px;
+    border-radius: 8px;
+
+}
+.textint{
+
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+    margin-bottom: 1.5em;
+}
+.arenas{
+    margin-top: 2em;
+    margin-left: 5.5em;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2em;
+}
+.arena1 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.figcaption{
+    text-align: center;
+}
+.desc{
+    margin-top: -2.8em;
+    font-size: 0.8em;
+    text-align: center;
+}
+.textarena1{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+    margin-bottom: 2em;
+}
+.arena2 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena2{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+}
+.arena3 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena3{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+}
+.arena4 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena4{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+}
+.arena5 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena5{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+    margin-bottom: 4vw;
+}
+.inicial{
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-color: rgb(255, 0, 0);
+
+}
+.geral3{
+    margin-top: 45vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.tabelainicio{
+    border-color: black !important;
+}

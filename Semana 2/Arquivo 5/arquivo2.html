@@ -1,0 +1,62 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+DATA: 03/03/2023
+Dev: Luiz Filipe - 2111287
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo 2</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body background="background.png">
+    <div class="formulario">
+        <div class="voltini">
+            <p><a href="index.html">Para voltar ao menu inicial. Clique aqui</a></p> <!--Botão para voltar pra tela inicial-->
+        </div>
+        <form> <!--Criando o formulário-->
+                <strong>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha"><br><br>
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade"><br><br>
+
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" id="sexo_feminino" name="sexo" value="feminino">
+
+                    <label for="sexo_feminino">Feminino</label>
+                    <input type="radio" id="sexo_masculino" name="sexo" value="masculino">
+
+                    <label for="sexo_masculino">Masculino</label><br><br>
+                    <label for="interesses">Gênero de jogos interessados:</label>
+                    <input type="checkbox" id="interesse_FPS" name="interesses[]" value="FPS">
+
+                    <label for="interesse_FPS">FPS</label>
+                    <input type="checkbox" id="interesse_MOBA" name="interesses[]" value="MOBA">
+
+                    <label for="interesse_MOBA">MOBA</label>
+                    <input type="checkbox" id="interesse_Battle Royale" name="interesses[]" value="Battle Royale">
+
+                    <label for="interesse_Battle Royale">Battle Royale</label><br><br>
+                    <label for="print">Print do seu Perfil no jogo:</label>
+                    <input type="file" id="print" name="print"><br><br>
+                    
+                    <input type="submit" value="Enviar">
+                </strong>
+            </form>
+    </div>
+</body>
+</html>

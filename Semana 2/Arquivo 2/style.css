@@ -1,0 +1,18 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA</h1>
+Disciplina de Programação Web
+DATA: 01/03/2023
+Dev: Luiz Filipe - 2111287
+*/
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+}
+.formulario form{
+    text-align: center;
+    width: 100%;
+    margin-top: 15em;
+    color: orangered;
+
+}

@@ -1,0 +1,153 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA</h1>
+Disciplina de Programação Web
+DATA: 01/03/2023
+Dev: Luiz Filipe - 2111287
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-attachment: fixed;
+
+}
+.name h1{
+    font-size: 1em;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 5.5em;
+
+}
+.cabeçalho h1{
+    font-size: 1em;
+    text-align: left;
+    margin-left: 5.5em;
+
+}
+.link{
+    margin-left: 5.5em;
+    margin-top: 1em;
+    text-align: left;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%
+}
+.title h2{
+    margin-left: 30%;
+    margin-right: 30%;
+    width: auto;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+    border: black solid;
+    box-shadow: gray -4px 4px 3px;
+    border-radius: 8px;
+    height: 40px;
+}
+.textint{
+
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+    margin-bottom: 1.5em;
+}
+.arenas{
+    margin-top: 2em;
+    margin-left: 5.5em;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2em;
+}
+.arena1 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.figcaption{
+    text-align: center;
+}
+.desc{
+    margin-top: -2.8em;
+    font-size: 0.8em;
+    text-align: center;
+}
+.textarena1{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+    margin-bottom: 2em;
+}
+.arena2 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena2{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+}
+.arena3 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena3{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+}
+.arena4 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena4{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+}
+.arena5 img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 800px;
+    max-height: 400px;
+    width: 100%
+}
+.textarena5{
+    margin-top: 1.5em;
+    text-align: justify;
+    margin-left: 5.5em;
+    margin-right: 6.5em;
+    margin-bottom: 4vw;
+}
