@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- definindo o charset -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- especificando a compatibilidade com o Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- definindo o viewport -->
+    <title>Arquivo 2</title> <!-- definindo o título da página -->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"> <!-- definindo o ícone da página -->
+    <link rel="stylesheet" href="stylee.css"> <!-- importando a folha de estilo externa -->
+
+    <!-- Adicionando a biblioteca Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+
+</head>
+
+<script>
+    window.addEventListener('scroll',
+        function() {
+            const navbar = document
+                .querySelector(
+                    '.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add(
+                    'scrolled');
+            } else {
+                navbar.classList.remove(
+                    'scrolled');
+            }
+        });
+</script>
+
+<!-- Adicionando o menu navegável -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Esport</a>
+<button class="navbar-toggler" type="button"
+data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false"
+aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="Arquivo 1 Refatorado.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Arquivo 2 Refatorado.html">Formulário</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Arquivo 3 Refatorado.html">Tabelas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Arquivo 4 Refatorado.html">Arenas</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<!-- Utilizando a classe "container" para definir um container principal da página -->
+<div class="container">
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Menu</h1>
+        <!-- A Tag main é responsável para dizer os navegadores onde está o conteúdo principal da aplicação. -->
+<main>
+</div>
+
+<body background="imgs/background.png"> <!-- definindo o background da página -->
+    <div class="formulario">
+        <form> <!--Criando o formulário-->
+            <strong>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"><br><br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade"><br><br>
+
+                <label for="sexo">Sexo:</label>
+                <input type="radio" id="sexo_feminino" name="sexo" value="feminino">
+
+                <label for="sexo_feminino">Feminino</label>
+                <input type="radio" id="sexo_masculino" name="sexo" value="masculino">
+
+                <label for="sexo_masculino">Masculino</label><br><br>
+                <label for="interesses">Gênero de jogos interessados:</label>
+                <input type="checkbox" id="interesse_FPS" name="interesses[]" value="FPS">
+
+                <label for="interesse_FPS">FPS</label>
+                <input type="checkbox" id="interesse_MOBA" name="interesses[]" value="MOBA">
+
+                <label for="interesse_MOBA">MOBA</label>
+                <input type="checkbox" id="interesse_Battle Royale" name="interesses[]" value="Battle Royale">
+
+                <label for="interesse_Battle Royale">Battle Royale</label><br><br>
+                <label for="print">Print do seu Perfil no jogo:</label>
+                <input type="file" id="print" name="print"><br><br>
+                
+                <input type="submit" value="Enviar">
+            </strong>
+        </form>
+    </div>
+</body>
+</html>

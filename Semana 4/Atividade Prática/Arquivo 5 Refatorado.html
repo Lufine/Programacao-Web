@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <!-- Adicionando a biblioteca Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="navbar.css">
+
+</head>
+
+</head>
+
+<script>
+window.addEventListener('scroll',
+    function() {
+        const navbar = document
+            .querySelector(
+                '.navbar');
+
+        if (window.scrollY > 50) {
+            navbar.classList.add(
+                'scrolled');
+        } else {
+            navbar.classList.remove(
+                'scrolled');
+        }
+    });
+</script>
+
+<!-- Adicionando o menu navegável -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Esport</a>
+<button class="navbar-toggler" type="button"
+data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="Arquivo 1 Refatorado.html">Sobre</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="Arquivo 2 Refatorado.html">Formulário</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="Arquivo 3 Refatorado.html">Tabelas</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="Arquivo 4 Refatorado.html">Arenas</a>
+    </li>
+</ul>
+</div>
+</nav>
+
+<!-- Utilizando a classe "container" para definir um container principal da página -->
+<div class="container">
+
+<div class="container">
+<div class="jumbotron">
+    <h1 class="display-4">Menu</h1>
+    <!-- A Tag main é responsável para dizer os navegadores onde está o conteúdo principal da aplicação. -->
+<main>
+</div>
+
+<body background="13087.jpg" >
+    
+    <!-- Aqui está o cabeçalho-->
+    <div class="name">
+        <h1>Dev: Luiz Filipe - 2111287</h1>
+    </div>
+        <div class="cabeçalho">
+            <h1>Curso de Engenharia de Software - UniEVANGÉLICA</h1>
+            <h1>Disciplina de Programação Web</h1>
+            <h1>DATA: 03/03/2023 </h1>
+        </div>
+    <!-- Aqui criei um link dentro da imagem do github para ir para o meu projeto-->
+    <div class="link">
+        <a target="_blank" href="https://github.com/Lufine"> <img src="icons8-github-50.png" alt=""></a>
+    </div>
+    <div class="inicial"> 
+        <p>Para ver sobre os E-Sports. <a href="arquivo1.html">Clique aqui</a><br></p>
+        <p>Para ver o formulario. <a href="arquivo2.html">Clique aqui</a><br></p>
+        <p>Para ver as tabelas <a href="arquivo3.html">Clique aqui</a><br></p>
+        <p>Para ver as arenas. <a href="arquivo4.html">Clique aqui</a></p>
+        
+        <div class="tabelainicio"> <!--Tabela na tela de inicio-->
+            <table border="1px">
+                <div class="colunainicio">
+                    <thead>
+                      <tr>
+                        <th colspan="3">E-Sports</th>
+                      </tr>
+                    </thead>
+                <tr>
+                    <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                  </tr>
+                  <tr>
+                    <td>Maria</td>
+                    <td>32</td>
+                    <td>Advogada</td>
+                  </tr>
+                  <tr>
+                    <td>Carlos</td>
+                    <td>25</td>
+                    <td>Pro Player</td>
+                  </tr>
+                  <tr>
+                    <td>Lucas</td>
+                    <td>28</td>
+                    <td>Psicologo</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3">Total de pessoas: 3</td>
+                  </tr>
+                </tfoot>
+            </div>
+              </table>
+        </div>
+
+        <label for="nome">Nome:</label> <!--Criação do formulario na tela inicial-->
+                    <input type="text" id="nome" name="nome"><br><br>
+                    <label for="email">E-mail:</label>
+
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="senha">Senha:</label>
+
+                    <input type="password" id="senha" name="senha"><br><br>
+                    <label for="idade">Idade:</label>
+
+                    <input type="number" id="idade" name="idade"><br><br>
+                    <label for="sexo">Sexo:</label>
+
+                    <input type="radio" id="sexo_feminino" name="sexo" value="feminino">
+                    <label for="sexo_feminino">Feminino</label>
+
+                    <input type="radio" id="sexo_masculino" name="sexo" value="masculino">
+                    <label for="sexo_masculino">Masculino</label><br><br>
+
+
+                    <input type="submit" value="Enviar">
+                    
+        <img src="" alt="">
+    </div>
+</body>
+</html>

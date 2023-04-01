@@ -1,0 +1,28 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA</h1>
+Disciplina de Programação Web
+DATA: 01/03/2023
+Dev: Luiz Filipe - 2111287
+*/
+
+.navbar{
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: #8400ff;
+}
+
+.navbar-brand {
+    font-weight: bold; /* Negrito */
+    color: white; /* Cor branca */
+}
+
+.nav-link {
+    color: white; /* Cor branca */
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.8); /* Cor branca com transparência ao passar o mouse */
+}
