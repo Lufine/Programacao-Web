@@ -1,0 +1,82 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Luiz Filipe Neuwirth
+DATA: 24/03/2023
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação de Medicamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script5.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<script>
+    window.addEventListener('scroll',
+        function() {
+            const navbar = document
+                .querySelector(
+                    '.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add(
+                    'scrolled');
+            } else {
+                navbar.classList.remove(
+                    'scrolled');
+            }
+        });
+</script>
+
+<!-- Adicionando o menu navegável -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">ARP</a>
+<button class="navbar-toggler" type="button"
+data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false"
+aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="tela1.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela2.html">Agendar Consulta</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela3.html">Consultar Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela4.html">Consultar Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela5.html">Lista Medicamentos</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<body>
+    <header>
+        <h1>Gerenciador de Medicamentos</h1>
+    </header>
+    <main>
+        <form id="add-medicine-form">
+            <label for="medicine-name">Nome do medicamento:</label>
+            <input type="text" id="medicine-name" required>
+            <input type="submit" value="Adicionar Medicamento">
+        </form>
+        <div id="medicine-list-container">
+            <br><h2>Lista de medicamentos:</h2>
+            <ul id="medicine-list"></ul>
+        </div>
+    </main>
+</body>
+</html>

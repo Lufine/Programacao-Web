@@ -1,0 +1,83 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Luiz Filipe Neuwirth
+DATA: 24/03/2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script3.js"></script>
+  <title>Pacientes</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<script>
+    window.addEventListener('scroll',
+        function() {
+            const navbar = document
+                .querySelector(
+                    '.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add(
+                    'scrolled');
+            } else {
+                navbar.classList.remove(
+                    'scrolled');
+            }
+        });
+</script>
+
+<!-- Adicionando o menu navegável -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">ARP</a>
+<button class="navbar-toggler" type="button"
+data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false"
+aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="tela1.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela2.html">Agendar Consulta</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela3.html">Consultar Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela4.html">Consultar Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela5.html">Lista Medicamentos</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<body>
+  <header>
+    <h1>Consulta de Pacientes</h1>
+  </header>
+  <main>
+    <form id="search-form">
+      <label for="search">Buscar paciente por nome ou CPF:</label>
+      <input type="text" id="search" required>
+      <input type="submit" value="Buscar">
+    </form>
+    <label class="second-label" for="search">Lista de Pacientes:</label>
+    <div id="patient-list">
+      <!-- Lista de pacientes será inserida aqui -->
+    </div>
+  </main>
+</body>
+</html>

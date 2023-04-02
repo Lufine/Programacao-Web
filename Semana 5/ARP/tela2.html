@@ -1,0 +1,121 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Luiz Filipe Neuwirth
+DATA: 24/03/2023
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agendamento de Consultas</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<script>
+    window.addEventListener('scroll',
+        function() {
+            const navbar = document
+                .querySelector(
+                    '.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add(
+                    'scrolled');
+            } else {
+                navbar.classList.remove(
+                    'scrolled');
+            }
+        });
+</script>
+
+<!-- Adicionando o menu navegável -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">ARP</a>
+<button class="navbar-toggler" type="button"
+data-toggle="collapse" data-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false"
+aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="tela1.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela2.html">Agendar Consulta</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela3.html">Consultar Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela4.html">Consultar Pacientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tela5.html">Lista Medicamentos</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<body>
+	<header>
+		<h1>Agendamento de Consultas</h1> </header>
+	<main>
+		<form id="appointment-form">
+			<div>
+				<label for="calendar">Data *</label>
+				<input type="date" id="calendar" required> </div>
+			<div>
+				<label for="time">Horário *</label>
+				<input type="time" id="time" required> </div>
+			<div>
+				<label for="doctor">Médico *</label>
+				<select id="doctor" required>
+					<option value="">Selecione o médico</option>
+					<!-- Adicione as opções de médicos aqui -->
+					<option value="dr1">Dr. Jorge</option>
+					<option value="dr2">Dra. Jurema</option>
+					<option value="dr3">Dr. Cleito</option>
+					<option value="dr4">Dra. Marta</option>
+					<option value="dr5">Dr. Rodrigo</option>
+					<option value="dr6">Dra. Carla</option>
+					<option value="dr7">Dr. Bruno</option>
+					<option value="dr8">Dra. Ana Paula</option>
+					<option value="dr9">Dr. Eduardo</option>
+					<option value="dr10">Dra. Lívia</option>
+					<option value="dr11">Dr. Felipe</option>
+					<option value="dr12">Dra. Isadora</option>
+					<option value="dr13">Dr. Luiz</option>
+					<option value="dr14">Dra. Regina</option>
+					<option value="dr15">Dr. Marcos</option>
+					<option value="dr16">Dra. Renata</option>
+					<option value="dr17">Dr. Sebastião</option>
+					<option value="dr18">Dr. Douglas</option>
+					<option value="dr19">Dr. Luiz Filipe</option>
+					<option value="dr20">Dra. Isabella</option>
+				</select>
+			</div>
+			<div>
+				<label for="appointment-type">Tipo de consulta *</label>
+				<select id="appointment-type" required>
+					<option value="">Selecione o tipo de consulta</option>
+					<option value="consulta1">Consulta 1</option>
+					<option value="consulta2">Consulta 2</option>
+					<option value="consulta3">Consulta 3</option>
+					<!-- Adicione mais opções de tipos de consulta aqui -->
+				</select>
+			</div>
+			<button type="submit">Agendar</button>
+		</form>
+	</main>
+	<script src="script2.js"></script>
+</body>
+
+</html>

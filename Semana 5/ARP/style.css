@@ -1,0 +1,94 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA
+Disciplina de Programação Web
+Dev: Luiz Filipe Neuwirth
+DATA: 24/03/2023
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #79f9fd;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 3px solid #333;
+  }
+  
+  main {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  input, label {
+    display: block;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="submit"] {
+    background: #79f9fd;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background: #79f9fd;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 600px) {
+    header {
+      padding: 1rem 0;
+    }
+  
+    form {
+      margin: 1rem auto;
+    }
+  }
+
+.navbar{
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: #8400ff;
+}
+
+.navbar-brand {
+  font-weight: bold; /* Negrito */
+  color: #79f9fd; /* Cor branca */
+}
+
+.nav-link {
+  color: #79f9fd; /* Cor branca */
+}
+
+.nav-link:hover {
+  color: #79f9fd; /* Cor branca com transparência ao passar o mouse */
+}
