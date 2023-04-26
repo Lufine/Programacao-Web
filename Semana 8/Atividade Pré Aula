@@ -1,0 +1,13 @@
+Nome: Luiz Filipe Neuwirth
+Matrícula: 2111287
+Curso: Engenharia de Software
+Disciplina: Programação Web
+Data: 26/04/2023
+
+SPA (Single Page Application) é uma técnica de desenvolvimento web que consiste em criar uma aplicação web que funciona em uma única página, sem a necessidade de recarregar a página ou realizar novas solicitações ao servidor para exibir conteúdo novo. Isso é possível através da utilização do JavaScript para realizar as atualizações dinâmicas da página.
+
+Uma das vantagens da utilização de uma SPA é a sensação de velocidade e fluidez que ela proporciona ao usuário, pois não há atrasos causados pela necessidade de carregar novas páginas. Além disso, é possível criar uma interface de usuário mais rica e dinâmica, com animações e efeitos visuais, sem comprometer a experiência do usuário.
+
+Outra vantagem é a facilidade de desenvolvimento, pois a separação entre frontend e backend é mais clara, permitindo que equipes diferentes possam trabalhar em cada parte do projeto sem se preocupar com a comunicação entre elas.
+
+No entanto, é importante lembrar que uma SPA pode ser menos amigável para motores de busca e pode exigir mais trabalho no lado do desenvolvimento para garantir que a experiência do usuário seja a melhor possível. Também pode exigir mais recursos do navegador do usuário, pois todo o conteúdo é carregado em uma única página.
