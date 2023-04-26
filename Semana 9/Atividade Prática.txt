@@ -1,0 +1,37 @@
+Nome: Luiz Filipe Neuwirth
+Matrícula: 2111287
+Curso: Engenharia de Software
+Disciplina: Programação Web
+Data: 26/04/2023
+
+GET /api/teams - recuperar a lista de todos os times
+
+POST /api/teams - criar um novo time
+
+GET /api/teams/{team_id} - recuperar informações de um time específico por ID
+
+PUT /api/teams/{team_id} - atualizar informações de um time específico por ID
+
+DELETE /api/teams/{team_id} - excluir um time específico por ID
+
+GET /api/teams/{team_id}/players - recuperar a lista de jogadores de um time específico
+
+POST /api/teams/{team_id}/players - adicionar um novo jogador ao time
+
+GET /api/teams/{team_id}/players/{player_id} - recuperar informações de um jogador específico de um time por ID
+
+PUT /api/teams/{team_id}/players/{player_id} - atualizar informações de um jogador específico de um time por ID
+
+DELETE /api/teams/{team_id}/players/{player_id} - excluir um jogador específico de um time por ID
+
+GET /api/players - recuperar a lista de todos os jogadores cadastrados
+
+POST /api/players - criar um novo jogador
+
+GET /api/players/{player_id} - recuperar informações de um jogador específico por ID
+
+PUT /api/players/{player_id} - atualizar informações de um jogador específico por ID
+
+DELETE /api/players/{player_id} - excluir um jogador específico por ID
+
+Esses endpoints permitem criar, editar, excluir e visualizar informações sobre times e jogadores. Eles também permitem listar todos os times e jogadores cadastrados na API.
