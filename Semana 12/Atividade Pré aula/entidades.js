@@ -1,3 +1,10 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Filipe Neuwirth
+DATA: 19/05/2023 
+*/
+
 // Criando instâncias das entidades
 const jogador1 = new Jogador("Aspas");
 const jogador2 = new Jogador("Sacy");

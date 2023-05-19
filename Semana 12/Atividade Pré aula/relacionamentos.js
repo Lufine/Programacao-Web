@@ -1,3 +1,10 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luiz Filipe Neuwirth
+DATA: 19/05/2023 
+*/
+
 class Jogador {
     constructor(nome) {
       this.nome = nome;
