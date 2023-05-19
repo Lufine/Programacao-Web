@@ -1,0 +1,11 @@
+Entidades e os relacionamentos entre elas:
+
+    Jogador: Um jogador pertence a uma equipe (1 para N) e pode participar de múltiplas competições (N para N).
+
+    Equipe: Uma equipe possui vários jogadores (1 para N) e pode participar de várias competições (N para N).
+
+    Competição: Uma competição possui várias equipes (N para N) e ocorre em uma determinada data.
+
+    Patrocinador: Um patrocinador pode apoiar várias equipes (N para N) e pode estar associado a uma competição específica.
+
+    Partida: Uma partida ocorre entre duas equipes e faz parte de uma competição.
