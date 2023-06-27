@@ -4,9 +4,15 @@ Disciplina de Programação Web
 DATA: 01/03/2023
 Dev: Luiz Filipe - 2111287
 */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -16,13 +22,13 @@ Dev: Luiz Filipe - 2111287
 
 .navbar-brand {
     font-weight: bold; /* Negrito */
-    color: white; /* Cor branca */
+    color: rgb(90, 90, 90); /* Cor branca */
 }
 
 .nav-link {
-    color: white; /* Cor branca */
+    color: rgb(90, 89, 89); /* Cor branca */
 }
 
 .nav-link:hover {
-    color: rgba(255, 255, 255, 0.8); /* Cor branca com transparência ao passar o mouse */
+    color: rgba(116, 115, 115, 0.8); /* Cor branca com transparência ao passar o mouse */
 }
